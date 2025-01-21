@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}", // src 디렉토리 내 JS/TSX 파일
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        mainNav : 'rgb(22 , 22 , 29)'
+      }
+    },
   },
   plugins: [],
 };

@@ -1,10 +1,10 @@
+import {Disclosure} from "@headlessui/react";
+
 const MainNavBar = () => {
     return (
-        <>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-        </>
+        <Disclosure as="nav" className="mainNav">
+
+        </Disclosure>
     )
 }
 
