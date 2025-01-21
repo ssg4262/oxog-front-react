@@ -9,6 +9,12 @@
 }
 .logo-font {
     font-family: 'fasterOne', sans-serif;
+    width: 66px;
+    height: 16px;
+    font-size: 24px;  /* 텍스트 크기를 높이와 맞추기 */
+    line-height: 16px; /* 세로 정렬을 맞추기 위해 */
+    padding-left: 16px; 
+    padding-right: 4px; 
 }
 :root {
     font-family: 'Roboto', sans-serif;
