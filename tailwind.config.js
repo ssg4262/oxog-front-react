@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+export default {
+  content: [
+    "./index.html", // Vite 루트 HTML 파일
+    "./src/**/*.{js,jsx,ts,tsx}", // src 디렉토리 내 JS/TSX 파일
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
