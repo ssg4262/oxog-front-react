@@ -1,4 +1,5 @@
 import MainNavBar from "../../components/nav/MainNavBar.jsx";
+import MainSidebar from "../../components/sideBar/MainSidebar.jsx";
 
 const MainHome = () => {
     return (
@@ -6,6 +7,7 @@ const MainHome = () => {
             {/*navbar*/}
             <MainNavBar />
             {/*navbar*/}
+            <MainSidebar/>
         </>
     )
 }

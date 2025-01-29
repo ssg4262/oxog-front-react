@@ -7,7 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        mainNav : 'rgb(22 , 22 , 29)'
+        mainNav : 'rgb(22 , 22 , 29)',
+        customGray: 'rgb(142, 142, 142)',
+        customPurple: '#BCA9F5',
+        sideDark: "#20232B",
+        discordBrand: "#5865f2",
       }
     },
   },
