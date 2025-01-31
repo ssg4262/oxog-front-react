@@ -1,4 +1,5 @@
 import profile from "../../assets/img/profile/profile.png"
+import setting from "../../assets/svg/setting.svg";
 const userInfo = () => {
     return(
         <div className="w-[300px] bg-[#2b2d31] rounded-xl shadow-lg overflow-hidden">
@@ -34,10 +35,12 @@ const userInfo = () => {
             </div>
 
             {/* 예시 버튼 */}
-            <div className="p-4">
-                <button className="w-full bg-gray-700 text-white py-2 rounded-md hover:bg-gray-600">
-                    편집
-                </button>
+            <div className="relative p-6">
+                <img
+                    src={setting}
+                    className="absolute right-4 top-4 w-6 h-6 cursor-pointer"
+                    alt="전적"
+                />
             </div>
         </div>
     )

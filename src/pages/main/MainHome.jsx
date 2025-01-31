@@ -8,8 +8,8 @@ const MainHome = () => {
                 {/*navbar*/}
                 <MainNavBar />
                 {/*navbar*/}
-                <div className="mt-5 flex justify-end mr-[60px]">
-                <UserInfo/>
+                <div className="mt-5 flex justify-end mr-10 md:mr-[50px]">
+                    <UserInfo/>
                 </div>
                 {/* searchBar*/}
                 <div className="mt-5">
