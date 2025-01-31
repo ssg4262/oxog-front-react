@@ -25,6 +25,9 @@
 .nav-font{
     font-family: 'NotoSansKR', sans-serif;
 }
+.loginBtn-font{
+    font-family: 'RubikGlitch', sans-serif;
+}
 :root {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
