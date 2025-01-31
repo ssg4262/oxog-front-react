@@ -2,19 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-    font-family: 'fasterOne';
-    src: url('./assets/font/FasterOne-Regular.ttf') format('truetype');
+    font-family: 'RubikGlitch';
+    src: url('assets/font/RubikGlitch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('./assets/font/NotoSansKR-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 .logo-font {
-    font-family: 'fasterOne', sans-serif;
+    font-family: 'RubikGlitch', sans-serif;
     width: 66px;
     height: 16px;
     font-size: 24px;  /* 텍스트 크기를 높이와 맞추기 */
     line-height: 16px; /* 세로 정렬을 맞추기 위해 */
     padding-left: 16px; 
     padding-right: 4px; 
+}
+.nav-font{
+    font-family: 'NotoSansKR', sans-serif;
+}
+.loginBtn-font{
+    font-family: 'RubikGlitch', sans-serif;
 }
 :root {
     font-family: 'Roboto', sans-serif;
