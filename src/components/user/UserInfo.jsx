@@ -38,7 +38,7 @@ const userInfo = () => {
             <div className="relative p-6">
                 <img
                     src={setting}
-                    className="absolute right-4 top-4 w-6 h-6 cursor-pointer"
+                    className="absolute right-4 top-4 w-9 h-6 cursor-pointer"
                     alt="전적"
                 />
             </div>
