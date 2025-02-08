@@ -63,11 +63,11 @@ const RankingInfo = () => {
                     <div className="flex items-center space-x-1">
                         <div className="text-white text-sm">
                             <span className="font-bold">517 LP</span>
-                            <span className="text-green-400 ml-1 text-xs">▲ 29</span>
+                            <span className="text-purple-400 ml-1 text-xs">▲ 29</span>
                         </div>
                         <div className="text-white text-sm">
                             <span className="font-bold">796 LP</span>
-                            <span className="text-green-400 ml-1 text-xs">▲ 43</span>
+                            <span className="text-purple-400 ml-1 text-xs">▲ 43</span>
                         </div>
                     </div>
 
@@ -76,14 +76,14 @@ const RankingInfo = () => {
                 <div className="mt-3 flex ml-3">
                     <button
                         className={`w-[70px] h-[30px] text-white text-sm font-medium py-1 px-3 rounded-md transition-transform duration-150 
-              ${selected === "solo" ? "bg-[#515162]" : ""} hover:bg-gray-700 active:scale-95`}
+              ${selected === "solo" ? "bg-[#515162]" : ""} hover:bg-[#626275] active:scale-95`}
                         onClick={() => setSelected("solo")}
                     >
                         솔랭
                     </button>
                     <button
                         className={`w-[70px] h-[30px] text-white text-sm font-medium py-1 px-3 rounded-md transition-transform duration-150 
-              ${selected === "free" ? "bg-[#515162]" : ""} hover:bg-gray-700 active:scale-95`}
+              ${selected === "free" ? "bg-[#515162]" : ""} hover:bg-[#626275] active:scale-95`}
                         onClick={() => setSelected("free")}
                     >
                         자랭
