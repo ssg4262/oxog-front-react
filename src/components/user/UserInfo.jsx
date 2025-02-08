@@ -2,7 +2,7 @@ import profile from "../../assets/img/profile/profile.png"
 import setting from "../../assets/svg/setting.svg";
 const userInfo = () => {
     return(
-        <div className="w-[300px] bg-[#2b2d31] rounded-xl shadow-lg overflow-hidden">
+        <div className="w-[310px] h-[280px] bg-[#2b2d31] rounded-xl shadow-lg overflow-hidden">
 
             {/* 배너 이미지 */}
             <div className="h-[120px] bg-purple-400"></div>
@@ -38,7 +38,7 @@ const userInfo = () => {
             <div className="relative p-6">
                 <img
                     src={setting}
-                    className="absolute right-4 top-4 w-6 h-6 cursor-pointer"
+                    className="absolute right-4 top-4 w-9 h-6 cursor-pointer"
                     alt="전적"
                 />
             </div>

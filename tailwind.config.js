@@ -14,7 +14,8 @@ export default {
         discordBrand: "#5865f2",
         mainLoginText:"#C3CBD1",
         sideItem:"#313338",
-        searchBarInput:'rgb(49,49,60)'
+        searchBarInput:'rgb(49,49,60)',
+        cardGray: "rgb(43, 45, 49)",
       }
     },
   },
