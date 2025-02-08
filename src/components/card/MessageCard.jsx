@@ -24,10 +24,12 @@ const MessageCard = () => {
                 </button>
             </div>
 
-            <div className="relative mb-4">
-                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-base"> <img src={searchIcon} className="mr-2" alt="검색" /></span>
+            <div className="relative mb-4 group">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-base transition-transform duration-200 ease-out group-hover:-translate-y-1">
+                    <img src={searchIcon} className="w-4 h-4 transition-transform duration-200 ease-out group-hover:-translate-y-1" alt="검색" />
+                </span>
                 <input
-                    className="w-full pl-10 pr-4 py-1.5 bg-[rgb(30,31,34)] text-white placeholder-gray-400 rounded-full border-none focus:ring-0 shadow-inner text-sm cursor-pointer"
+                    className="w-full pl-10 pr-4 py-1.5 bg-[rgb(30,31,34)] text-white placeholder-gray-400 rounded-full border-none focus:ring-0 shadow-inner text-sm cursor-pointer transition-transform duration-200 ease-out group-hover:-translate-y-1"
                     placeholder="검색하기"
                     disabled={true}
                     value={search}
@@ -48,7 +50,7 @@ const MessageCard = () => {
 
             <div className="space-y-2 mt-3 flex-1 overflow-y-auto max-h-[400px]">
                 {messages.filter(m => m.name.includes(search)).map(({ id, name, message, time, avatar, verified, status }) => (
-                    <div key={id} className="flex items-center gap-3 p-3 bg-[rgb(43,45,49)] rounded-lg relative cursor-pointer">
+                    <div key={id} className="flex items-center gap-3 p-3 bg-[rgb(43,45,49)] rounded-lg relative cursor-pointer hover:bg-[#4752C4]">
                         <div className="relative">
                             <img src={avatar} alt={name} className="w-12 h-12 rounded-full border-2 border-gray-700" />
                             <span
