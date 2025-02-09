@@ -8,13 +8,13 @@ const SearchBarCard = () => {
             {/* Wave with Spark Icons */}
             <div className="absolute top-0 left-0 w-full">
                 {/* Floating Circular Image */}
-                <div className="absolute top-[-36px] left-1/2 transform -translate-x-1/2 bg-[#5865f2] p-3 rounded-full shadow-lg z-10">
-                    <img
-                        src="https://via.placeholder.com/48"
-                        alt="Server Icon"
-                        className="w-16 h-16 rounded-full"
-                    />
-                </div>
+                {/*<div className="absolute top-[-36px] left-1/2 transform -translate-x-1/2 bg-[#5865f2] p-3 rounded-full shadow-lg z-10">*/}
+                {/*    <img*/}
+                {/*        src="https://via.placeholder.com/48"*/}
+                {/*        alt="Server Icon"*/}
+                {/*        className="w-16 h-16 rounded-full"*/}
+                {/*    />*/}
+                {/*</div>*/}
                 <svg
                     viewBox="0 0 1440 320"
                     xmlns="http://www.w3.org/2000/svg"
