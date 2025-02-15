@@ -2,7 +2,7 @@ import profile from "../../assets/img/profile/profile.png"
 import setting from "../../assets/svg/setting.svg";
 const userInfo = () => {
     return(
-        <div className="w-[310px] h-[280px] bg-[#2b2d31] rounded-xl shadow-lg overflow-hidden">
+        <div className="w-[320px] h-[280px] bg-[#2f3136] rounded-xl shadow-lg overflow-hidden">
 
             {/* 배너 이미지 */}
             <div className="h-[120px] bg-purple-400"></div>

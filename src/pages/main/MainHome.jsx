@@ -8,6 +8,8 @@ import ServerCreationCard from "../../components/card/ServerCreationCard.jsx";
 import CommunityCard from "../../components/card/CommunityCard.jsx";
 import MessageCard from "../../components/card/MessageCard.jsx";
 import SearchBarCard from "../../components/card/SearchBarCard.jsx";
+import QuestSuccessStories from "../../components/carousel/MainCarousel.jsx";
+import MainCarousel from "../../components/carousel/MainCarousel.jsx";
 const MainHome = () => {
     return (
         <>
@@ -16,21 +18,20 @@ const MainHome = () => {
                 <MainNavBar />
                 {/*<MainHeader/>*/}
                 {/*navbar*/}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-8">
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
                     {/* First and Second Columns: SearchBarCard */}
-                    <div className="col-span-1 sm:col-span-1">
-                        <SearchBarCard />
-                    </div>
-                    <div className="col-span-1 sm:col-span-1">
+                    <div className="col-span-2 sm:col-span-2 lg:col-span-2">
+                        <MainCarousel />
                     </div>
 
                     {/* Rightmost Column: UserInfo */}
                     <div className="col-span-1 sm:col-span-1 lg:col-span-1">
                         <div className="flex flex-col items-end mr-10">
-                            <div className="max-w-[330px]">
+                            <div className="max-w-[320px]">
                                 <UserInfo />
                             </div>
-                            <div className="max-w-[310px] mt-4">
+                            <div className="max-w-[320px] mt-4">
                                 <MessageCard />
                             </div>
                         </div>
