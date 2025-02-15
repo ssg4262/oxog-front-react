@@ -7,6 +7,7 @@ import {MainHeader} from "../../components/header/MainHeader.jsx";
 import ServerCreationCard from "../../components/card/ServerCreationCard.jsx";
 import CommunityCard from "../../components/card/CommunityCard.jsx";
 import MessageCard from "../../components/card/MessageCard.jsx";
+import SearchBarCard from "../../components/card/SearchBarCard.jsx";
 const MainHome = () => {
     return (
         <>
@@ -15,12 +16,24 @@ const MainHome = () => {
                 <MainNavBar />
                 {/*<MainHeader/>*/}
                 {/*navbar*/}
-                <div className="mt-5 flex flex-col items-end mr-10">
-                    <div className="max-w-[330px]">
-                        <UserInfo />
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-8">
+                    {/* First and Second Columns: SearchBarCard */}
+                    <div className="col-span-1 sm:col-span-1">
+                        <SearchBarCard />
                     </div>
-                    <div className="max-w-[310px] mt-4">
-                        <MessageCard />
+                    <div className="col-span-1 sm:col-span-1">
+                    </div>
+
+                    {/* Rightmost Column: UserInfo */}
+                    <div className="col-span-1 sm:col-span-1 lg:col-span-1">
+                        <div className="flex flex-col items-end mr-10">
+                            <div className="max-w-[330px]">
+                                <UserInfo />
+                            </div>
+                            <div className="max-w-[310px] mt-4">
+                                <MessageCard />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
