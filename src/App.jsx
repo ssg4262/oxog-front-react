@@ -1,14 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MainHome from "./pages/main/MainHome.jsx"; // BrowserRouter로 변경
+import {ThemeProvider} from "@material-tailwind/react";
+import {indexRouter} from "@/router/indexRouter.jsx";
 
 const App = () => {
     return (
-        <Router>
-            {/* 라우트 설정 */}
-            <Routes>
-                <Route path="/" element={<MainHome />} />  {/* component 대신 element 사용 */}
-            </Routes>
-        </Router>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem={false}
+            storageKey="oxog-theme"
+        >
+            <Router>
+                {/* 라우트 설정 */}
+                <Routes>
+                    {indexRouter.map((route, index) => (
+                        <Route key={index} path={route.path} element={route.element} />
+                    ))}
+                </Routes>
+            </Router>
+        </ThemeProvider>
     );
 }
 

@@ -16,7 +16,7 @@ const MessageCard = () => {
     const [search, setSearch] = useState("");
 
     return (
-        <div className="bg-[rgb(43,45,49)] text-white h-[600px] p-4 max-w-md mx-auto rounded-xl relative flex flex-col">
+        <div className="bg-[rgb(32,33,36)] text-white h-[650px] p-4 max-w-md mx-auto relative flex flex-col">
             <div className="flex justify-between items-center mb-3">
                 <p className="text-lg font-bold">메시지</p>
                 <button className="bg-[rgb(36,39,45)] text-white px-2 py-1.5 rounded-full text-xs flex items-center gap-1 shadow-md">
