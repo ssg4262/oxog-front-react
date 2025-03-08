@@ -1,10 +1,10 @@
 import React from "react";
 import {MainSideBar} from "@/components/sideBar/MainSideBar";
-import MainNavBar from "@/components/nav/MainNavBar";
+import {MainNavBar} from "@/components/nav/MainNavBar";
 import {MainServerSideBar} from "@/components/nav/MainServerSideBar";
 import {RecordMain} from "@/components/record/RecordMain";
 
-const MainHome = () => {
+export const MainHome = () => {
     return (
         <div className="flex flex-col h-screen bg-[rgb(35,38,45)] nav-font overflow-hidden">
             {/* 상단 네비게이션 바 */}
@@ -33,4 +33,3 @@ const MainHome = () => {
     );
 };
 
-export default MainHome;

@@ -34,7 +34,7 @@ interface ActionItem {
     icon: React.ElementType;
 }
 
-const MainNavBar = () => {
+export const MainNavBar = () => {
     // 드롭다운 상태
     const [dropDownMenu, setDropDownMenu] = useState<DropDownState>({
         record: false,
@@ -164,4 +164,3 @@ const MainNavBar = () => {
     );
 };
 
-export default MainNavBar;
