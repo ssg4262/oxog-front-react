@@ -1,16 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
+import {useNavigate} from "react-router-dom";
 
 const LoginPage = () => {
+    const navigate = useNavigate()
+    const [loginValue, setLoginValue] = useState({
+        id : '',
+        pw: ''
+    });
+
+    const handleInput = (e,value) => {
+        setLoginValue({
+            ...loginValue,
+            [value] : e.target.value
+        })
+    }
+    const handleNavigate = (path) => {
+        navigate(path)
+    }
+
     return (
         <div className="h-screen flex items-center justify-center bg-mainNav relative overflow-hidden">
             {/* 배경 효과 */}
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                <div className="absolute w-72 h-72 bg-[#3b4cca] rounded-full opacity-30 blur-3xl top-10 left-10"></div>
-                <div className="absolute w-64 h-64 bg-[#7289DA] rounded-full opacity-30 blur-3xl bottom-10 right-10"></div>
+                {/*<div className="absolute w-72 h-72 bg-[#3b4cca] rounded-full opacity-30 blur-3xl top-10 left-10"></div>*/}
+                {/*<div className="absolute w-64 h-64 bg-[#7289DA] rounded-full opacity-30 blur-3xl bottom-10 right-10"></div>*/}
             </div>
 
             {/* 로그인 카드 */}
-            <div className="z-10 bg-[#36393F] p-8 rounded-lg shadow-2xl flex flex-row w-[800px] h-[440px]">
+            <div className="z-10 bg-[#36393F] p-8 rounded-lg flex flex-row w-[800px] h-[440px]">
                 {/* 로그인 폼 */}
                 <div className="w-2/3 flex flex-col justify-center pr-8 border-r border-gray-600">
                     <p className="login-logo-font text-white mb-3">OXOG</p>
@@ -19,6 +36,7 @@ const LoginPage = () => {
 
                     <label className="text-gray-300 text-xs font-semibold mb-1" htmlFor="email">이메일 또는 전화번호 *</label>
                     <input
+                        onChange={(e) => handleInput(e,'id')}
                         id="email"
                         type="text"
                         className="w-full p-3 bg-[#202225] text-white rounded-sm mb-4 focus:outline-none focus:ring-2 focus:ring-[#5865F2] border border-gray-600"
@@ -26,6 +44,7 @@ const LoginPage = () => {
 
                     <label className="text-gray-300 text-xs font-semibold mb-1" htmlFor="password">비밀번호 *</label>
                     <input
+                        onChange={(e) => handleInput(e,'pw')}
                         id="password"
                         type="password"
                         className="w-full p-3 bg-[#202225] text-white rounded-sm mb-2 focus:outline-none focus:ring-2 focus:ring-[#5865F2] border border-gray-600"
@@ -38,7 +57,7 @@ const LoginPage = () => {
                     </button>
 
                     <p className="text-gray-400 text-xs mt-4">
-                        계정이 필요하신가요? <a href="#" className="text-[#5865F2] hover:underline">가입하기</a>
+                        계정이 필요하신가요? <a onClick={() => handleNavigate('/sign-up')} className="text-[#5865F2] hover:underline">가입하기</a>
                     </p>
                 </div>
 
@@ -47,7 +66,7 @@ const LoginPage = () => {
                     <img
                         src="/qr-code.png"
                         alt="QR 코드 로그인"
-                        className="w-36 h-36 mb-4 rounded-md shadow-lg"
+                        className="w-36 h-36 mb-4 rounded-md"
                     />
                     <h3 className="text-white text-lg font-semibold">QR 코드로 로그인</h3>
                     <p className="text-gray-400 text-xs mt-2 leading-tight">
