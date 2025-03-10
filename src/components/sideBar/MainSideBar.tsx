@@ -14,7 +14,7 @@ export const MainSideBar = () => {
     const [servers, setServers] = useState([{
         id:'1' , name:'고승범',imageUrl:profile
     }, {
-        id:'2' , name:'고승범2',imageUrl:null
+        id:'2' , name:'고승범2',imageUrl:''
     }
     ]);
     return(

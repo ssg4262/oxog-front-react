@@ -58,7 +58,7 @@ export const ServerSidebar = () => {
             </div>
 
             {/* 다이렉트 메시지 목록 */}
-            <div className="mt-4 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700">
+            <div className="mt-4 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 max-h-[455px]">
                 <div className="flex items-center justify-between px-2 text-gray-400 text-xs mb-2">
                     <span>대화 중 메시지</span>
                     <Plus className="w-4 h-4 cursor-pointer hover:text-white transition-all duration-200" />

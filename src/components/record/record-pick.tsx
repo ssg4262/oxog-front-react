@@ -57,18 +57,6 @@ export const RecordPick = () => {
                     </div>
                 ))}
             </div>
-
-            <div className="absolute top-4 right-4 bg-gray-900 px-5 py-3 rounded-full flex items-center space-x-4 shadow-md">
-                <div className="flex items-center text-yellow-400">
-                    <Circle className="w-5 h-5" />
-                    <span className="ml-1 text-white font-semibold">2</span>
-                </div>
-                <div className="flex items-center text-yellow-400">
-                    <Check className="w-5 h-5" />
-                    <span className="ml-1 text-white font-semibold">1</span>
-                </div>
-                <User className="w-6 h-6 text-white" />
-            </div>
         </div>
     );
 };

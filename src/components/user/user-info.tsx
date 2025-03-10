@@ -1,11 +1,13 @@
-import profile from "../../assets/img/profile/profile.png"
-import setting from "../../assets/svg/setting.svg";
-const userInfo = () => {
+import React from "react";
+
+import profile from '@/assets/img/profile/profile.png'
+import setting from "@/assets/svg/setting.svg";
+export const UserInfo = () => {
     return(
-        <div className="w-[320px] h-[280px] bg-[#2f3136] rounded-xl shadow-lg overflow-hidden">
+        <div className="w-[320px] h-[280px] bg-[rgb(38,40,44)] rounded-xl overflow-hidden mt-4 ml-2 mr-2">
 
             {/* 배너 이미지 */}
-            <div className="h-[120px] bg-purple-400"></div>
+            <div className="h-[120px] bg-[rgb(99,99,99)] shadow-ml"></div>
 
             {/* 프로필 이미지 및 상태 버튼 */}
             <div className="relative">
@@ -45,5 +47,3 @@ const userInfo = () => {
         </div>
     )
 }
-
-export default userInfo

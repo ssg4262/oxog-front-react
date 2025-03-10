@@ -114,5 +114,6 @@
       "@/*": ["src/*"]
     },
     "jsx": "react"
-  }
+  },
+  "include": ["src", "src/declarations.d.ts"]
 }

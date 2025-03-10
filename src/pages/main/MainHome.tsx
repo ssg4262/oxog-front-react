@@ -3,10 +3,12 @@ import {MainSideBar} from "@/components/sideBar/MainSideBar";
 import {MainNavBar} from "@/components/nav/MainNavBar";
 import {MainServerSideBar} from "@/components/nav/MainServerSideBar";
 import {RecordMain} from "@/components/record/RecordMain";
+import {UserInfo} from "@/components/user/user-info";
+import {UserMain} from "@/components/user/UserMain";
 
 export const MainHome = () => {
     return (
-        <div className="flex flex-col h-screen bg-[rgb(35,38,45)] nav-font overflow-hidden">
+        <div className="flex flex-col h-screen bg-[rgb(43,45,49)] nav-font overflow-hidden">
             {/* 상단 네비게이션 바 */}
             <header className="sticky top-0 w-full z-50 h-[35px] flex-shrink-0">
                 <MainNavBar />
@@ -26,8 +28,11 @@ export const MainHome = () => {
 
                 {/* 메인 콘텐츠 영역 - 남은 공간을 차지 */}
                 <main className="flex-1 flex flex-col h-[calc(100vh-35px)] overflow-hidden">
-                    <RecordMain />
+                    {/*<RecordMain />*/}
                 </main>
+                <div className="flex">
+                    <UserMain/>
+                </div>
             </div>
         </div>
     );
