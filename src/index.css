@@ -18,31 +18,31 @@
     height: 16px;
     font-size: 20px;  /* 텍스트 크기를 높이와 맞추기 */
     line-height: 16px; /* 세로 정렬을 맞추기 위해 */
-    padding-left: 16px;
+    padding-left: 5px;
     padding-right: 4px;
 
-    /*!* 빛나는 효과 추가 *!*/
-    /*text-shadow: 0 0 5px rgba(255, 255, 255, 0.4),*/
-    /*0 0 10px rgba(255, 255, 255, 0.3),*/
-    /*0 0 15px rgba(255, 255, 255, 0.2);*/
+    /* 빛나는 효과 추가 */
+    text-shadow: 0 0 5px rgba(31, 48, 61, 0.4),
+    0 0 10px rgba(31, 48, 61, 0.3),
+    0 0 15px rgba(31, 48, 61, 0.2);
 
-    /*!* 부드러운 애니메이션 효과 *!*/
-    /*animation: glow 1.5s infinite alternate;*/
+    /* 부드러운 애니메이션 효과 */
+    animation: glow 1.5s infinite alternate;
 }
 
 /* 빛이 깜빡이는 애니메이션 */
-/*@keyframes glow {*/
-/*    0% {*/
-/*        text-shadow: 0 0 5px rgba(255, 255, 255, 0.6),*/
-/*        0 0 10px rgba(255, 255, 255, 0.5),*/
-/*        0 0 15px rgba(255, 255, 255, 0.4);*/
-/*    }*/
-/*    100% {*/
-/*        text-shadow: 0 0 8px rgba(255, 255, 255, 0.9),*/
-/*        0 0 16px rgba(255, 255, 255, 0.8),*/
-/*        0 0 24px rgba(255, 255, 255, 0.7);*/
-/*    }*/
-/*}*/
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(31, 48, 61, 0.6),
+        0 0 10px rgba(31, 48, 61, 0.5),
+        0 0 15px rgba(31, 48, 61, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 8px rgba(31, 48, 61, 0.9),
+        0 0 16px rgba(31, 48, 61, 0.8),
+        0 0 24px rgba(31, 48, 61, 0.7);
+    }
+}
 
 .chat-logo-font {
     font-family: 'RubikGlitch', sans-serif;

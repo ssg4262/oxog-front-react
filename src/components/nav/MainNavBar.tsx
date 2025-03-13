@@ -12,6 +12,7 @@ import {
     SquaresPlusIcon
 } from "@heroicons/react/24/outline";
 import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
+import {LogoCharacterSvg} from "@/assets/img/main/logo-character-svg";
 
 // 드롭다운 상태 타입
 interface DropDownState {
@@ -74,13 +75,14 @@ export const MainNavBar = () => {
     ];
 
     return (
-        <Disclosure as="nav" className="bg-[rgb(28,29,31)] px-4 py-2 h-[35px]">
+        <Disclosure as="nav" className="bg-[rgb(29,31,37)] px-4 py-2 h-[35px]">
             {({ open }) => (
                 <>
                     <div className="flex items-center justify-between h-full">
                         {/* 로고와 드롭다운 메뉴 */}
                         <div className="flex items-center">
-                            <div className="flex items-center">
+                            <div className="flex items-center pl-4">
+                                <LogoCharacterSvg size={27} isCircle={true}/>
                                 <p className="logo-font text-white">OXOG</p>
                             </div>
 
