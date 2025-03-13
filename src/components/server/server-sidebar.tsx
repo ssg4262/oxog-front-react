@@ -35,7 +35,7 @@ export const ServerSidebar = () => {
                 <input
                     type="text"
                     placeholder="대화 찾기 또는 시작하기"
-                    className="w-full bg-[#1E1F22] rounded-md pl-10 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                    className="w-full bg-[rgb(23,24,29)] rounded-md pl-10 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
                     value={search}
                     readOnly
                     onChange={(e) => setSearch(e.target.value)}
@@ -45,20 +45,25 @@ export const ServerSidebar = () => {
             {/* 상단 메뉴 */}
             <div className="space-y-1">
                 {MainMenu.map((menu, idx) => (
-                    <button className={`flex items-center space-x-3 p-3 rounded-md transition w-full 
-                        ${msgSelect === menu.name ? "bg-[#3B3E43]" : ""} 
-                        hover:bg-[#3B3E43]`}
-                    onClick={() => setMsgSelect(menu.name)}
+                    <button
+                        key={menu.name}
+                        className={`flex items-center space-x-3 p-3 rounded-md transition w-full 
+                    ${msgSelect === menu.name ? "bg-[#3B3E43]" : ""} 
+                    hover:bg-[#3B3E43]`}
+                        onClick={() => setMsgSelect(menu.name)}
                     >
-                    {/*<User className="w-5 h-5 text-gray-300" />*/}
-                        <img src={menu.icon} alt={menu.name} />
+                        {typeof menu.icon === "string" ? (
+                            <img src={menu.icon} alt={menu.name} className="w-5 h-5" />
+                        ) : (
+                            React.createElement(menu.icon, { className: "w-5 h-5 text-gray-300" })
+                        )}
                         <span className="text-sm text-gray-300">{menu.name}</span>
                     </button>
                 ))}
             </div>
 
             {/* 다이렉트 메시지 목록 */}
-            <div className="mt-4 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700">
+            <div className="mt-4 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 max-h-[455px]">
                 <div className="flex items-center justify-between px-2 text-gray-400 text-xs mb-2">
                     <span>대화 중 메시지</span>
                     <Plus className="w-4 h-4 cursor-pointer hover:text-white transition-all duration-200" />
@@ -100,7 +105,7 @@ export const ServerSidebar = () => {
             </div>
 
             {/* 현재 사용자 */}
-            <div className="flex items-center space-x-3 p-3 bg-[#1E1F22] rounded-lg mt-3">
+            <div className="flex items-center space-x-3 p-3 bg-[rgb(23,24,29)] rounded-lg mt-3">
                 <div className="relative">
                     <img
                         src="/avatars/user.png"

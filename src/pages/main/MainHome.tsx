@@ -1,17 +1,18 @@
 import React from "react";
 import {MainSideBar} from "@/components/sideBar/MainSideBar";
-import MainNavBar from "@/components/nav/MainNavBar";
+import {MainNavBar} from "@/components/nav/MainNavBar";
 import {MainServerSideBar} from "@/components/nav/MainServerSideBar";
 import {RecordMain} from "@/components/record/RecordMain";
+import {UserInfo} from "@/components/user/user-info";
+import {UserMain} from "@/components/user/UserMain";
 
-const MainHome = () => {
+export const MainHome = () => {
     return (
-        <div className="flex flex-col h-screen bg-[rgb(35,38,45)] nav-font overflow-hidden">
+        <div className="flex flex-col h-screen bg-[rgb(35,38,45)] overflow-hidden">
             {/* 상단 네비게이션 바 */}
             <header className="sticky top-0 w-full z-50 h-[35px] flex-shrink-0">
                 <MainNavBar />
             </header>
-
             {/* 전체 레이아웃 컨테이너 */}
             <div className="flex flex-1 overflow-hidden">
                 {/* 왼쪽 사이드바 */}
@@ -28,9 +29,11 @@ const MainHome = () => {
                 <main className="flex-1 flex flex-col h-[calc(100vh-35px)] overflow-hidden">
                     <RecordMain />
                 </main>
+                <div className="flex">
+                    <UserMain/>
+                </div>
             </div>
         </div>
     );
 };
 
-export default MainHome;

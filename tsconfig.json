@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "lib": ["ES2017", "DOM"],
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */
@@ -114,5 +115,6 @@
       "@/*": ["src/*"]
     },
     "jsx": "react"
-  }
+  },
+  "include": ["src", "src/declarations.d.ts"]
 }
